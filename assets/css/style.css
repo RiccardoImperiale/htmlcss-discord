@@ -139,7 +139,7 @@ section.hero {
     height: 490px;
     background-color: var(--discord-primary);
     background-image: url("../img/jumbo.png");
-    background-position: top;
+    background-position: center;
     background-size: cover;
     color: white;
 }
