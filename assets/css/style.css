@@ -43,16 +43,16 @@ body {
 /* #region header */
 
 header {
-    padding: 1.4rem 4rem;
     background-color: var(--discord-primary);
     /* font-size: 1rem; */
     font-weight: 500;
 }
 
-nav {
+nav.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1.2rem 0;
 }
 
 .nav_links {
