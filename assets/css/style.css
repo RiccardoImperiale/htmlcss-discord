@@ -27,6 +27,13 @@
     src: local('gg sans SemiBold Regular'), url('../fonts/gg\ sans\ Semibold.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Ginto Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ABCGintoNord-Black-Trial'), url('../fonts/ABCGintoNord-Black-Trial.woff') format('woff');
+}
+
 /* #endregion font  */
 
 /* #region commons  */
@@ -46,10 +53,13 @@
 
 /* #endregion commons  */
 
+/* #region general */
+
 body {
     font-family: "gg sans Normal Regular", Calibri, Tahoma, sans-serif;
     color: var(--discord-dark);
 }
+/* #endregion general */
 
 /* #region utilities */
 
@@ -142,8 +152,9 @@ section.hero {
 }
 
 .hero_card .hero_title {
-    font-family: "gg sans Bold", Calibri, Tahoma, sans-serif;
+    font-family: "Ginto Bold", Calibri, Tahoma, sans-serif;
     font-size: 3.5rem;
+    text-transform: uppercase;
 }
 
 .hero_card p {
@@ -233,6 +244,10 @@ p {
     padding-inline: 5rem;
 }
 
+.meet h2 {
+    padding-right: 2rem;
+}
+
 .meet .col_image {
     justify-content: flex-start;
 }
@@ -252,6 +267,11 @@ p {
 .keep_in_touch .d-flex {
     align-items: center;
     flex-direction: column;
+}
+
+.keep_in_touch h2 {
+    font-family: "Ginto Bold", Calibri, Tahoma, sans-serif;
+    text-transform: uppercase;
 }
 
 .keep_in_touch .container-small {
