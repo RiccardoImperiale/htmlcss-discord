@@ -55,6 +55,7 @@ body {
 
 .container {
     max-width: 1180px;
+    width: 100%;
     margin: auto;
     padding: 8rem 0;
     align-items: flex-start;
@@ -289,16 +290,13 @@ p {
 /* #region footer */
 
 footer {
-    padding: 4rem 12.5rem;
     background-color: #23272A;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem
 }
 
 .footer_top {
     display: flex;
-    height: 80%;
     border-bottom: .05rem solid var(--discord-secondary);
     padding-bottom: 1.5rem;
 }
@@ -311,7 +309,7 @@ footer h3 {
     color: var(--discord-secondary);
     margin: 0;
     line-height: 2rem;
-    padding-right: 5rem;
+    padding-right: 10rem;
     margin-top: -0.45rem;
 }
 
@@ -357,6 +355,7 @@ footer h3 {
 .footer_bottom {
     display: flex;
     justify-content: space-between;
+    padding-top: 1.5rem;
 }
 
 .register_btn {
@@ -370,5 +369,6 @@ footer h3 {
     box-shadow: 0 10px 10px 0 hsla(0, 0%, 1%, 0.694);
     transition: all 0.25s ease;
 }
+
 
 /* #endregion footer */
