@@ -43,6 +43,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "gg sans Normal Regular", Calibri, Tahoma, sans-serif;
+}
+
 /* #endregion commons  */
 
 /* #region utilities */
@@ -55,7 +59,6 @@
 
 .container-small {
     max-width: 750px;
-    background-color: #31373b;
     margin: auto;
 }
 
@@ -119,7 +122,11 @@ button {
 /* #region hero */
 
 section.hero {
+    height: 480px;
     background-color: var(--discord-primary);
+    background-image: url("../img/jumbo.png");
+    background-position: top;
+    background-size: cover;
     color: white;
 }
 
@@ -134,7 +141,6 @@ section.hero {
 
 .hero_card .hero_title {
     font-size: 2rem;
-
 }
 
 .hero_card p {
