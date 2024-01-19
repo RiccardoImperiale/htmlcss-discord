@@ -8,7 +8,10 @@
 
     <link rel="stylesheet" href="./assets/css/style.css">
 
+    <!-- AOS CDN animations  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 
@@ -47,7 +50,7 @@
         </section>
         <!-- section - un luogo a invito..  -->
         <section class="invite">
-            <div class="d-flex container">
+            <div data-aos="fade-up" class="d-flex container">
                 <div class="col_image d-flex">
                     <img width="600" class="image" src="./assets/img/item1.svg" alt="discord chat illustration">
                 </div>
@@ -61,7 +64,7 @@
         <img id="first_wave" src="./assets/img/wave.svg" alt="wave">
         <!-- section - dove trovarsi..  -->
         <section class="meet">
-            <div class="d-flex container">
+            <div data-aos="fade-up" class="d-flex container">
                 <div class="col_text">
                     <h2>Dove trovarsi è facile</h2>
                     <p>Mettiti comodo in un canale vocale quando hai tempo. Gli amici nel tuo server possono vedere che
@@ -75,7 +78,7 @@
         <img id="second_wave" src="./assets/img/wave.svg" alt="wave">
         <!-- section - da pochi..  -->
         <section class="fandom">
-            <div class="d-flex container">
+            <div data-aos="fade-up" class="d-flex container">
                 <div class="col_image d-flex">
                     <img width="600" class="image" src="./assets/img/item3.svg" alt="discord chat illustration">
                 </div>
@@ -90,7 +93,7 @@
         <img id="first_wave" src="./assets/img/wave.svg" alt="wave">
         <!-- section - tecnologia affidabile..  -->
         <section class="keep_in_touch">
-            <div class="d-flex container-small">
+            <div data-aos="fade-up" class="d-flex container-small">
                 <h2>Tecnologia affidabile per tenersi in contatto</h2>
                 <p>Video e audio a bassa latenza ti faranno sentire come se foste tutti nella stessa stanza. Fai ciao in
                     video, guarda gli amici giocare in streaming, o riunitevi in una sessione si disegno con la
@@ -177,6 +180,15 @@
             <button class="register_btn">Registrati</button>
         </div>
     </footer>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+            // delay: 500,
+        });
+    </script>
 </body>
 
 </html>
