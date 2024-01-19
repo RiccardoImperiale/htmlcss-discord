@@ -48,6 +48,7 @@
 
 body {
     font-family: "gg sans Normal Regular", Calibri, Tahoma, sans-serif;
+    color: var(--discord-dark);
 }
 
 /* #region utilities */
@@ -193,13 +194,6 @@ section.hero {
 
 /* #region sections */
 
-/* .invite {
-    background-image: url(../img/wave.svg);
-    background-position: bottom;
-    background-size: 4000px;
-
-} */
-
 .col_image {
     width: 60%;
     justify-content: flex-end;
@@ -210,39 +204,62 @@ section.hero {
     padding: 2rem 5rem 0 5rem;
 }
 
-.col_text h2 {
+h2 {
     font-family: "gg sans Bold", Calibri, Tahoma, sans-serif;
     font-size: 3rem;
     line-height: 3rem;
     margin-bottom: 1rem;
 }
 
-.col_text p {
+h3 {
+    font-family: "gg sans Bold", Calibri, Tahoma, sans-serif;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+   margin-top: -1.8rem;
+}
+
+p {
     font-size: 1.2rem;
 }
 
-#first_wave{
+#first_wave {
     width: 100%;
     margin-bottom: -2rem;
 }
 
 .meet {
     background-color: var(--discord-bg-light);
+    padding-inline: 5rem;
 }
 
-#second_wave{
+.meet .col_image {
+    justify-content: flex-start;
+}
+
+.meet .col_text {
+    justify-content: flex-end;
+    width: 40%;
+    padding-right: 4rem;
+}
+
+#second_wave {
     width: 100%;
     rotate: 180deg;
     margin-bottom: 2rem;
 }
 
-.debug .keep_in_touch .container {
-    background-color: green;
-    height: 1000px;
+.keep_in_touch .d-flex {
+    align-items: center;
+    flex-direction: column;
+}
+
+.keep_in_touch .container-small {
+    padding: 6rem 0;
 }
 
 .keep_in_touch {
-    background-color: rgb(218, 218, 218);
+    background-color: var(--discord-bg-light);
     text-align: center;
 }
 
@@ -253,7 +270,20 @@ section.hero {
     gap: 2rem;
 }
 
+.keep_in_touch .download_btn {
+    background-color: var(--discord-secondary);
+    color: white;
+}
+
+.keep_in_touch .download_btn:hover {
+    background-color: var(--discord-secondary-light);
+    box-shadow: 0 8px 5px 0 hsla(0, 0%, 76%, 0.5);
+    transition: all 0.25s ease;
+}
+
 /* #endregion sections */
+
+
 
 
 /* #region footer */
