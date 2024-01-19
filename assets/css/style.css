@@ -25,12 +25,17 @@ body {
     max-width: 1180px;
     /* width: 80%; */
     margin: auto;
+    padding: 2rem 0;
 }
 
 .container-small {
-    max-width: 900px;
-    width: 60%;
-    margin: 2rem auto;
+    max-width: 750px;
+    background-color: #31373b;
+    margin: auto;
+}
+
+.d-flex{
+    display: flex;
 }
 
 /* #endregion utilities */
@@ -62,6 +67,28 @@ nav {
     text-decoration: none;
 }
 
+.nav_links a:hover {
+    text-decoration: underline;
+}
+
+button {
+    font-weight: 600;
+    border: none;
+    padding: .7rem 1.2rem;
+    border-radius: 2rem;
+}
+
+.login_btn {
+    color: var(--discord-dark);
+}
+
+.login_btn:hover {
+    color: var(--discord-primary);
+    box-shadow: 0 8px 15px -2px hsla(240, 67%, 40%, 0.6);
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
 /* #endregion header */
 
 
@@ -73,8 +100,6 @@ section.hero {
 }
 
 .hero_card {
-    max-width: 750px;
-    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -136,13 +161,13 @@ section.hero {
     background-color: rgb(243, 175, 254);
 }
 
-section {
+/* section {
     padding: 2rem 12.5rem;
-}
+} */
 
-.section_container {
+/* .section_container {
     display: flex;
-}
+} */
 
 .col_text {
     width: 40%;
@@ -156,7 +181,7 @@ section {
     background-color: rgb(218, 218, 218);
 }
 
-.debug .keep_in_touch .section_container {
+.debug .keep_in_touch .container {
     background-color: green;
     height: 1000px;
 }
@@ -166,7 +191,7 @@ section {
     text-align: center;
 }
 
-.keep_in_touch .section_container {
+.keep_in_touch  {
     display: flex;
     flex-direction: column;
     justify-content: center;
