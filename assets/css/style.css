@@ -221,13 +221,19 @@ section.hero {
     font-size: 1.2rem;
 }
 
-#wave{
+#first_wave{
     width: 100%;
-    margin-bottom: -1rem;
+    margin-bottom: -2rem;
 }
 
 .meet {
     background-color: var(--discord-bg-light);
+}
+
+#second_wave{
+    width: 100%;
+    rotate: 180deg;
+    margin-bottom: 2rem;
 }
 
 .debug .keep_in_touch .container {
