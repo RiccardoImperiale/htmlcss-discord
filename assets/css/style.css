@@ -1,3 +1,33 @@
+/* #region font  */
+@font-face {
+    font-family: 'gg sans Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('gg sans Bold'), url('../fonts/gg\ sans\ Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'gg sans Normal Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('gg sans Normal Regular'), url('../fonts/gg\ sans\ Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'gg sans Medium Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('gg sans Medium Regular'), url('../fonts/gg\ sans\ Medium.woff.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'gg sans SemiBold Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('gg sans SemiBold Regular'), url('../fonts/gg\ sans\ Semibold.woff') format('woff');
+}
+/* #endregion font  */
+
 /* #region commons  */
 :root {
     --discord-dark: #23272A;
@@ -15,15 +45,10 @@
 
 /* #endregion commons  */
 
-body {
-    font-family: "PT Sans", Calibri, Tahoma, sans-serif;
-}
-
 /* #region utilities */
 
 .container {
     max-width: 1180px;
-    /* width: 80%; */
     margin: auto;
     padding: 2rem 0;
 }
@@ -34,7 +59,7 @@ body {
     margin: auto;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
 }
 
@@ -43,9 +68,9 @@ body {
 /* #region header */
 
 header {
+    font-family: "gg sans SemiBold Regular", Calibri, Tahoma, sans-serif;
+    letter-spacing: .02rem;
     background-color: var(--discord-primary);
-    /* font-size: 1rem; */
-    font-weight: 500;
 }
 
 nav.container {
@@ -90,7 +115,6 @@ button {
 }
 
 /* #endregion header */
-
 
 /* #region hero */
 
@@ -191,7 +215,7 @@ section.hero {
     text-align: center;
 }
 
-.keep_in_touch  {
+.keep_in_touch {
     display: flex;
     flex-direction: column;
     justify-content: center;
