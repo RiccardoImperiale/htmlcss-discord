@@ -1,0 +1,220 @@
+/* #region commons  */
+:root {
+    --discord-dark: #23272A;
+    --discord-primary: #3161E0;
+    --discord-bg-light: #F6F6F6;
+    --discord-secondary: #7289DA;
+    --discord-secondary-light: #8EA1E1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #endregion commons  */
+
+body {
+    font-family: "PT Sans", Calibri, Tahoma, sans-serif;
+}
+
+/* #region utilities */
+
+.container {
+    max-width: 1180px;
+    /* width: 80%; */
+    margin: auto;
+}
+
+.container-small {
+    max-width: 900px;
+    width: 60%;
+    margin: 2rem auto;
+}
+
+/* #endregion utilities */
+
+/* #region header */
+
+header {
+    padding: 1.4rem 4rem;
+    background-color: var(--discord-primary);
+    /* font-size: 1rem; */
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav_links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* #endregion header */
+
+
+/* #region hero */
+
+section.hero {
+    background-color: var(--discord-primary);
+    color: white;
+}
+
+.hero_card {
+    max-width: 750px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+.hero_card .hero_title {
+    font-size: 2rem;
+
+}
+
+.hero_card p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.download_btn,
+.open_btn {
+    padding: 1rem 2rem;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin: 0 .5rem;
+}
+
+.download_btn {
+    color: var(--discord-dark);
+}
+
+.download_btn:hover {
+    color: var(--discord-primary);
+    box-shadow: 0 10px 10px 0 hsla(240, 67%, 40%, 0.5);
+    transition: all 0.25s ease;
+}
+
+.open_btn {
+    background-color: var(--discord-dark);
+    color: white;
+}
+
+.open_btn:hover {
+    background-color: #31373b;
+    box-shadow: 0 10px 10px 0 hsla(240, 67%, 40%, 0.5);
+    transition: all 0.25s ease;
+}
+
+/* #endregion hero */
+
+
+/* #region sections */
+
+.debug .col_image {
+    background-color: rgb(44, 93, 255);
+    height: 600px;
+}
+
+.debug .col_text {
+    background-color: rgb(243, 175, 254);
+}
+
+section {
+    padding: 2rem 12.5rem;
+}
+
+.section_container {
+    display: flex;
+}
+
+.col_text {
+    width: 40%;
+}
+
+.col_image {
+    width: 60%;
+}
+
+.meet {
+    background-color: rgb(218, 218, 218);
+}
+
+.debug .keep_in_touch .section_container {
+    background-color: green;
+    height: 1000px;
+}
+
+.keep_in_touch {
+    background-color: rgb(218, 218, 218);
+    text-align: center;
+}
+
+.keep_in_touch .section_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* #endregion sections */
+
+
+/* #region footer */
+
+.debug footer {
+    height: 540px;
+}
+
+.debug .footer_social {
+    background-color: pink;
+    border: 1px dashed black;
+    flex-grow: 1.75;
+}
+
+.debug .footer_links {
+    background-color: rgb(9, 197, 175);
+    border: 1px dashed black;
+    flex-grow: 1;
+}
+
+.debug .footer_bottom {
+    background-color: aquamarine;
+}
+
+footer {
+    padding: 4rem 12.5rem;
+    background-color: #23272A;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+}
+
+.footer_top {
+    display: flex;
+    height: 80%;
+    border-bottom: .08rem solid white;
+}
+
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* #endregion footer */
