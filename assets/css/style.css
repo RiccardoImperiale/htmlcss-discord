@@ -193,9 +193,16 @@ section.hero {
 
 /* #region sections */
 
+/* .invite {
+    background-image: url(../img/wave.svg);
+    background-position: bottom;
+    background-size: 4000px;
+
+} */
+
 .col_image {
     width: 60%;
-    justify-content:flex-end;
+    justify-content: flex-end;
 }
 
 .col_text {
@@ -214,8 +221,13 @@ section.hero {
     font-size: 1.2rem;
 }
 
+#wave{
+    width: 100%;
+    margin-bottom: -1rem;
+}
+
 .meet {
-    background-color: rgb(218, 218, 218);
+    background-color: var(--discord-bg-light);
 }
 
 .debug .keep_in_touch .container {
