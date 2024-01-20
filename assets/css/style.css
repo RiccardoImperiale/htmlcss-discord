@@ -136,7 +136,7 @@ button {
 /* #region hero */
 
 section.hero {
-    height: 490px;
+    height: 560px;
     background-color: var(--discord-primary);
     background-image: url("../img/jumbo.png");
     background-position: center;
@@ -318,19 +318,24 @@ footer {
 .footer_top {
     display: flex;
     border-bottom: .05rem solid var(--discord-secondary);
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
 }
 
 .footer_social {
     width: 35%;
 }
 
+.socials{
+    padding-top: 1rem;
+}
+
 footer h3 {
     color: var(--discord-secondary);
     margin: 0;
-    line-height: 2rem;
+    line-height: 2.25rem;
     padding-right: 10rem;
     margin-top: -0.45rem;
+    font-size: 2rem;
 }
 
 .coutries {
@@ -349,8 +354,8 @@ footer h3 {
 .fa-brands {
     text-decoration: none;
     color: white;
-    margin-right: 1rem;
-    font-size: .75rem;
+    margin-right: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .footer_links {
@@ -360,12 +365,12 @@ footer h3 {
 .footer_links h4 {
     font-family: "gg sans Bold", Calibri, Tahoma, sans-serif;
     color: var(--discord-secondary);
+    margin-bottom: 1rem;
 }
 
 .footer_links ul {
     color: white;
     list-style: none;
-    font-size: .8rem;
 }
 
 .footer_links li {
@@ -375,7 +380,7 @@ footer h3 {
 .footer_bottom {
     display: flex;
     justify-content: space-between;
-    padding-top: 1.5rem;
+    padding-top: 2rem;
 }
 
 .register_btn {
